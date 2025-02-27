@@ -1,5 +1,6 @@
 {% set name = "festim" %}
 {% set version = "2.0a0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - setuptools >=45
     - wheel
     - setuptools-scm >=7.0.5
@@ -24,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - fenics-dolfinx =0.9
-    - scifem
+    - scifem >=0.2.13
     - adios4dolfinx
 
 test:
