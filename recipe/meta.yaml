@@ -1,5 +1,5 @@
 {% set name = "festim" %}
-{% set version = "1.4" %}
+{% set version = "2.0a0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/festim-{{ version }}.tar.gz
-  sha256: 7ebefae709a8981183cf7d118dceec71681464f496b74837a8e5a966b052d63c
+  sha256: cede699a0f56799813aa0f79f1c23873223aa107ca5a6f8a36cfed28901d16c4
 
 build:
   noarch: python
@@ -23,7 +23,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fenics
+    - fenics-dolfinx == 0.9
+    - scifem
+    - adios4dolfinx
 
 test:
   imports:
