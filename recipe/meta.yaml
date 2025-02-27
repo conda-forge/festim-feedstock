@@ -27,6 +27,7 @@ requirements:
     - fenics-dolfinx =0.9
     - scifem >=0.2.13
     - adios4dolfinx
+    - tqdm
 
 test:
   imports:
