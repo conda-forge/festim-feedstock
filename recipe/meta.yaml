@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fenics-dolfinx = 0.9
+    - fenics-dolfinx =0.9
     - scifem
     - adios4dolfinx
 
