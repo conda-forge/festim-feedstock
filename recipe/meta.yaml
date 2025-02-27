@@ -1,6 +1,7 @@
 {% set name = "festim" %}
 {% set version = "2.0a0" %}
 {% set python_min = "3.10" %}
+{% set fenics_version = "0.9.*" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fenics-dolfinx =0.9
+    - fenics-dolfinx ${{ fenics_version }}
     - scifem >=0.2.13
     - adios4dolfinx
     - tqdm
