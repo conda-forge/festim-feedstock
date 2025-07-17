@@ -1,5 +1,5 @@
 {% set name = "festim" %}
-{% set version = "2.0a5" %}
+{% set version = "2.0a6" %}
 {% set python_min = "3.10" %}
 {% set fenics_version = "0.9" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/festim-{{ version }}.tar.gz
-  sha256: 463f3a0a51ab0cb3b19bbb02e6e2e8754a8cd40550852cf180234725114e7151
+  sha256: 2f069c1c5bae536df1c80dec1ad4ae7f303999414d40249dfe8dd01fe7492334
 
 build:
   noarch: python
